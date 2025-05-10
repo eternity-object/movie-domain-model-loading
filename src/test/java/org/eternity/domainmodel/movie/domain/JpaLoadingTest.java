@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest(showSql = false)
-public class JpaAssociationTest {
+public class JpaLoadingTest {
 	@Autowired
 	private EntityManager em;
 
