@@ -19,7 +19,7 @@ public class Screening {
     private LocalDateTime screeningTime;
 
     @OneToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-    @JoinColumn(name= "MOVIE_IE")
+    @JoinColumn(name= "MOVIE_ID")
     private Movie movie;
 
     public Screening(Movie movie, int sequence, LocalDateTime screeningTime) {
